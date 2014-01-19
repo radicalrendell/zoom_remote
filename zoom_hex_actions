@@ -1,0 +1,46 @@
+# 2014
+# debugging info...
+# sent via serial port
+
+
+send 9100 8000	action rec	leds 10<->11
+send 9200 8000  action play 
+
+send 8204 8000	action play
+
+send 9000 8000	action ?
+send 9001 8000	action prev	leds 10 60
+send 9002 8000	action line1	leds 10 60
+send 9004 8000	action line1	leds 10 60
+send 9008 8000	action ?
+send 9010 8000	action ?
+send 9020 8000	action ?
+send 9040 8000	action ?
+send 9080 8000	action ?
+
+send 1200 8000	action ?	leds 80 10
+send 2200 8000	action ?	leds 80 10
+send 4200 8000	action ?	leds 80 10
+
+send c200 8000	action ?	leds 80 10
+send d200 8000	action ?	leds 80 10
+send e200 8000	action ?	leds 80 10
+send f200 8000	action ?	leds 80 10
+
+
+
+bitmap
+release button
+15	14	13	12	11	10	9	8
+CTRL	0	0	0	0	0	0	0
+
+7	6	5	4	3	2	1	0
+0	0	0	0	0	0	0	0
+
+or 
+
+15	14	13	12	11	10	9	8
+CTRL	0	0	prev	next	stop	play	rec	
+	
+7	6	5	4	3	2	1	0
+0	rec-	rec+	vol-	vol+	line2	line1	mic
