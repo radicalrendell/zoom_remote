@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# used with the Raspberry PI as a "Zoom Remote"
+
 print("ZOOM Remote control")
 
 import time
